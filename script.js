@@ -3,7 +3,7 @@ let gridContainer = document.createElement('div');
 gridContainer.classList.add('grid-container');
 
 let button = document.createElement('button');
-button.textContent = "Click Me";
+button.textContent = "Reset";
 mainContainer.appendChild(button);
 
 mainContainer.appendChild(gridContainer);
