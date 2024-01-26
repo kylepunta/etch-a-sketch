@@ -1,8 +1,8 @@
-body {
+/*body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+}*/
 
 .main-container {
     display: flex;
@@ -23,4 +23,11 @@ body {
     border: 2px solid black;
     min-height: 50px;
     min-width: 50px;
+}
+
+button {
+    align-self: center;
+    margin: 20px;
+    padding: 10px 50px;
+    font-size: 20px;
 }
