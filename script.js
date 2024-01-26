@@ -2,11 +2,11 @@ let mainContainer = document.querySelector('.main-container');
 let gridContainer = document.createElement('div');
 gridContainer.classList.add('grid-container');
 
+mainContainer.appendChild(gridContainer);
+
 let button = document.createElement('button');
 button.textContent = "Reset";
 mainContainer.appendChild(button);
-
-mainContainer.appendChild(gridContainer);
 
 for (let index = 1; index <= 16; index++) {
     let row = document.createElement('div');
@@ -22,7 +22,7 @@ for (let index = 1; index <= 16; index++) {
 let squares = document.querySelectorAll('.square');
 squares.forEach((square) => {
     square.addEventListener('mouseover', (e) => {
-        e.target.style.background = 'black';
+        e.target.style.background = '#ab2e25';
     });
 });
 
@@ -48,7 +48,7 @@ button.addEventListener('click', () => {
     let squares = document.querySelectorAll('.square');
     squares.forEach((square) => {
         square.addEventListener('mouseover', (e) => {
-            e.target.style.background = 'black';
+            e.target.style.background = '#ab2e25';
         });
     });
 });
