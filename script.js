@@ -13,7 +13,7 @@ for (let index = 1; index <= 16; index++) {
 
 let squares = document.querySelectorAll('.square');
 squares.forEach((square) => {
-    square.addEventListener('mouseover', () => {
-        square.classList.add('highlight');
+    square.addEventListener('mouseover', (e) => {
+        e.target.style.background = 'yellow';
     });
 });
