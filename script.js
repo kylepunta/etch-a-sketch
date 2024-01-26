@@ -1,5 +1,9 @@
 let mainContainer = document.querySelector('.main-container');
 
+let button = document.createElement('button');
+button.textContent = "Click Me";
+mainContainer.appendChild(button);
+
 for (let index = 1; index <= 16; index++) {
     let row = document.createElement('div');
     row.classList.add(`flex-row`);
