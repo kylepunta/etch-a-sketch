@@ -10,3 +10,10 @@ for (let index = 1; index <= 16; index++) {
         row.appendChild(square);
     };
 };
+
+let squares = document.querySelectorAll('.square');
+squares.forEach((square) => {
+    square.addEventListener('mouseover', () => {
+        square.classList.add('highlight');
+    });
+});
