@@ -22,7 +22,7 @@ for (let index = 1; index <= 16; index++) {
 let squares = document.querySelectorAll('.square');
 squares.forEach((square) => {
     square.addEventListener('mouseover', (e) => {
-        e.target.style.background = 'yellow';
+        e.target.style.background = 'black';
     });
 });
 
@@ -48,7 +48,7 @@ button.addEventListener('click', () => {
     let squares = document.querySelectorAll('.square');
     squares.forEach((square) => {
         square.addEventListener('mouseover', (e) => {
-            e.target.style.background = 'yellow';
+            e.target.style.background = 'black';
         });
     });
 });
