@@ -1,13 +1,17 @@
 let mainContainer = document.querySelector('.main-container');
+let gridContainer = document.createElement('div');
+gridContainer.classList.add('grid-container');
 
 let button = document.createElement('button');
 button.textContent = "Click Me";
 mainContainer.appendChild(button);
 
+mainContainer.appendChild(gridContainer);
+
 for (let index = 1; index <= 16; index++) {
     let row = document.createElement('div');
     row.classList.add(`flex-row`);
-    mainContainer.appendChild(row);
+    gridContainer.appendChild(row);
     for (let index = 1; index <= 16; index++) {
         let square = document.createElement('div');
         square.classList.add(`square`);
@@ -33,7 +37,7 @@ button.addEventListener('click', () => {
     for (let index = 1; index <= newSquares; index++) {
         let row = document.createElement('div');
         row.classList.add(`flex-row`);
-        mainContainer.appendChild(row);
+        gridContainer.appendChild(row);
         for (let index = 1; index <= newSquares; index++) {
             let square = document.createElement('div');
             square.classList.add(`square`);
