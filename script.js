@@ -29,6 +29,14 @@ squares.forEach((square) => {
 button.addEventListener('click', () => {
     let newSquares = prompt("How many squares would you like per side?");
 
+    if (newSquares > 100) {
+        newSquares = 100;
+    };
+
+    if (newSquares === "") {
+        newSquares = 16;
+    };
+
     let rows = document.querySelectorAll('.flex-row');
     rows.forEach((row) => {
         row.remove();
